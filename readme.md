@@ -13,6 +13,7 @@ Demo [https://khaleed-saifullah.github.io/Biznes/]( https://khaleed-saifullah.gi
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3)
 * [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/introduction/)
+* [Jquery](https://jquery.com/)
 
 ## What I have done
 
