@@ -1,0 +1,913 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+
+.padd-one {
+  padding-left: 3px !important;
+  padding-right: 3px !important;
+}
+
+.margin-top100 {
+  margin-top: 100px;
+}
+
+.primary-color {
+  color: #8bc34a !important;
+}
+
+/* Heading One Css */
+.heading-one {}
+
+.heading-one p {
+  font-size: 10px;
+  color: #808080;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.heading-one h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #444444;
+}
+
+.heading-one h2 span {
+  color: #4caf50;
+}
+
+/* Heading Two Css */
+
+.heading-two {
+  text-align: center;
+}
+
+.heading-two p {
+  font-size: 10px;
+  color: #808080;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.heading-two h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #444444;
+}
+
+.heading-two h2 span {
+  color: #4caf50;
+}
+
+.heading-two .bottom-line {
+  background-color: #8bc34a;
+  height: 3px;
+  width: 40px;
+  position: relative;
+}
+
+.heading-two .bottom-line::after {
+  position: absolute;
+  content: "";
+  left: -10px;
+  right: -10px;
+  height: 1px;
+  background-color: #e8e8e8;
+  top: 1px;
+  z-index: -1;
+}
+
+/* ========= Header CSS ========== */
+
+.header-top {
+  background-color: #343434;
+  padding: 10px 0;
+}
+
+.header-top-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.header-top-left ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-top-left ul li {
+  display: inline-block;
+  color: #6b6b6b;
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+.header-top-right ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.header-top-right ul li a {
+  color: #6b6b6b;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.header-top-right ul li a:hover {
+  color: #fff;
+}
+
+/* Main Menu Css */
+.fixed .main-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  right: 0;
+  background: #fff;
+
+}
+
+.fixed .main-menu .navbar-nav .nav-item {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.main-menu .navbar-nav .nav-item {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: .4s;
+}
+
+.main-menu .navbar-nav .nav-item.active .nav-link {
+  color: #8bc34a;
+}
+
+.main-menu .navbar-nav .nav-link {
+  text-transform: uppercase;
+  margin: 0 5px;
+  color: #444444;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.main-menu .navbar-nav .nav-link:hover {
+  color: #4caf50;
+}
+
+.main-menu .search-icon i {
+  color: #cbcbcb;
+}
+
+
+/* ========= Slider Area CSS ========== */
+
+.slider {
+  position: relative;
+}
+
+.slider-item {
+  background-image: url(../images/1.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  z-index: 0;
+  height: 500px;
+  text-align: center;
+}
+
+
+.slider-item img {
+  width: 100%;
+}
+
+.slider-item-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.slider-item::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 1;
+}
+
+.slider-item-content .para-1 {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.slider-item-content h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-top: -5px;
+}
+
+.slider-item-content .para-2 {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.slider-button {
+  margin-top: 55px;
+}
+
+.slider-button a {
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.slider-button a:first-child {
+  background-color: #4caf50;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.slider-button a:last-child {
+  background-color: #fff;
+  color: #8bc34a;
+}
+
+.slider-bullet {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  z-index: 30;
+}
+
+.slider-bullet li {
+  height: 8px;
+  width: 8px;
+  background-color: #414141;
+  margin: 0 5px;
+  border: 2px solid;
+}
+
+.slider-bullet li.active {
+  border: 2px solid #a6a6a6;
+}
+
+.slider-arrow .left-arrow,
+.slider-arrow .right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  color: #fff;
+}
+
+.slider-arrow .left-arrow {
+  left: 20px;
+}
+
+.slider-arrow .right-arrow {
+  right: 20px;
+}
+
+
+.slider-arrow .left-arrow:hover,
+.slider-arrow .right-arrow:hover {
+  color: #4caf50;
+}
+
+
+/* ========= About Area CSS ========== */
+.about {
+  margin-top: -60px;
+}
+
+.about-img {
+  background-color: #4caf50;
+}
+
+.about-img img {
+  width: 100%;
+  position: relative;
+  box-shadow: -10px -10px #344558;
+  height: 500px;
+}
+
+.about-content {
+  padding-left: 40px;
+  height: calc(100% + 40px);
+  display: flex;
+  align-items: center;
+}
+
+.about-content-inner {
+  padding-top: 60px;
+}
+
+.about-btn {
+  text-transform: uppercase;
+  padding: 10px 35px;
+  border-radius: 20px;
+  font-size: 13px;
+  border: 1px solid #4caf50;
+  color: #4caf50;
+  font-weight: 500;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.about-btn:hover {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.about-content-des {
+  color: #8c8c8c;
+  margin-bottom: 0;
+  margin-top: 35px;
+}
+
+/* ========= What We Do Area CSS ========== */
+.we-do {
+  background-color: #fafafa;
+  padding: 70px 0;
+  margin-top: 40px;
+}
+
+.we-do-heading>p {
+  margin-top: 35px;
+  color: #808080;
+}
+
+.we-do-description {
+  margin-top: 60px;
+}
+
+.we-do-box-icon {
+  margin-bottom: 15px;
+}
+
+.we-do-box-icon ion-icon {
+  font-size: 40px;
+}
+
+.we-do-box-heading {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.we-do-box-heading:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -10px;
+  height: 1px;
+  width: 30px;
+  background-color: #000;
+}
+
+.we-do-image {}
+
+.we-do-image-inner {
+  position: relative;
+}
+
+.we-do-image-second {
+  position: absolute;
+  left: 45%;
+  top: 25%;
+}
+
+/* ========= Recent Work Area CSS ========== */
+.recent-work {
+  padding: 90px 0;
+}
+
+.recent-work .project {
+  margin-top: 50px;
+}
+
+.portfolio-filter {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-filter li {
+  display: inline-block;
+  margin: 0 2px;
+  color: #444444;
+  border-right: 2px solid #444444;
+  padding-right: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.portfolio-filter li.active {
+  color: #4caf50;
+}
+
+.portfolio-filter li:last-child {
+  border-right: 0;
+}
+
+.single-project {
+  height: 265px;
+  position: relative;
+  margin-bottom: 3px;
+}
+
+.single-project img {
+  height: 100%;
+  width: 100%;
+}
+
+.single-project-hover {
+  transform: scale(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4caf50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .3s;
+  opacity: 0;
+}
+
+.single-project-hover a {
+  display: inline-block;
+}
+
+.single-project-hover a ion-icon {
+  color: #fff;
+  font-size: 70px;
+}
+
+.single-project:hover .single-project-hover {
+  transform: scale(1);
+  opacity: .8;
+}
+
+/* ========= Feature Area CSS ========== */
+.feature {
+  border-top: 1px solid #ececec;
+}
+
+.feature-tab {}
+
+.feature-tab ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0px !important;
+}
+
+.feature-tab ul li {
+  width: 33.33%;
+}
+
+.feature-tab ul li a {
+  display: inline-block;
+  color: #444444;
+  padding: 25px 0;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0px !important;
+}
+
+.feature-tab ul li a:hover {
+  border: 0px !important;
+}
+
+.feature-tab ul li a ion-icon {
+  margin-right: 5px;
+}
+
+.feature-tab ul li a.active {
+  color: #444444 !important;
+  background-color: #f7f7f7 !important;
+  border: 0px !important;
+  border-bottom: 2px solid #8bc34a !important;
+  border-radius: 0px !important;
+}
+
+.feature-content {
+  padding: 60px 0;
+  background-color: #f7f7f7;
+}
+
+.feature-content h3 {
+  font-weight: 600;
+}
+
+.feature-content p {
+  color: #808080;
+}
+
+/* ========= Big Banner Area CSS ========== */
+
+.big-banner {
+  height: 275px;
+  background: url(../images/cta-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  border-bottom: 3px solid #8bc34a;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.big-banner::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  opacity: .7;
+  z-index: -1;
+}
+
+.big-banner-content {
+  text-align: center;
+}
+
+.big-banner-content h3 {
+  margin-bottom: 0px;
+  color: #fff;
+}
+
+.big-banner-button {
+  text-transform: uppercase;
+  padding: 10px 0px;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #8bc34a;
+  color: #fff;
+  display: inline-block;
+  width: 555px;
+  text-align: center;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -21px;
+  transition: .3s;
+  border: 1px solid transparent;
+}
+
+.our-blog-left-content-image img {
+  height: 300px;
+  width: 100%;
+}
+
+.our-blog-right-content-box-image img {
+  height: 200px;
+  width: 100%;
+}
+
+.big-banner-button:hover {
+  color: #8bc34a;
+  background-color: #fff;
+  border: 1px solid #8bc34a;
+}
+
+
+/* ========= Team Member Area CSS ========== */
+
+.team-member {
+  padding: 80px 0;
+}
+
+.team-member-content {
+  position: relative;
+  overflow: hidden;
+  height: 330px;
+}
+
+.team-member-content img {
+  height: 100%;
+  width: 100%;
+}
+
+.team-member-content-hover {
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  opacity: .9;
+  transition: .8s;
+}
+
+.team-member-content:hover .team-member-content-hover {
+  top: 0;
+}
+
+.team-member-des {
+  color: #fff !important;
+  padding: 0 10px;
+  position: absolute;
+  top: 50%;
+  transition: .8s;
+}
+
+.team-member-content:hover .team-member-des {
+  transform: translateY(-50%);
+}
+
+.team-member-social {
+  background-color: #8bc34a;
+  padding: 10px 0;
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  width: 100%;
+  transition: .8s;
+}
+
+.team-member-content:hover .team-member-social {
+  bottom: 0;
+}
+
+.team-member-social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team-member-social ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.team-member-social ul li:last-child {
+  margin-right: 0;
+}
+
+.team-member-social ul li a {
+  color: #fff;
+}
+
+/* ========= Our Blog Area CSS ========== */
+.our-blog {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.our-blog-left-content-image {
+  position: relative;
+}
+
+.date-month {
+  position: absolute;
+  background-color: #8bc34a;
+  bottom: 25px;
+  left: 25px;
+  padding: 12px 10px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 10px 10px #6f9c3b;
+}
+
+.date-month .date {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.date-month .month {
+  font-size: 13px;
+}
+
+.our-blog-left-content-des h5 {
+  font-weight: 600;
+  color: #444444;
+}
+
+.our-blog-left-content-des p {
+  color: #808080;
+}
+
+.our-blog-right-content-box-des {
+  background-color: #e6e6e6;
+  padding: 10px;
+}
+
+.our-blog-right-content-box-des h6 {
+  font-size: 14px;
+}
+
+.our-blog-right-content-box-des p {
+  color: #808080;
+  font-size: 11px;
+  margin-bottom: 0;
+}
+
+/* ========= Client Area CSS ========== */
+
+.client {
+  background-color: #fafafa;
+  padding: 100px 0;
+}
+
+.client img {
+  width: 110px;
+  height: 80px;
+}
+
+/* ========= Footer Area CSS ========== */
+
+.footer {
+  background-color: #262626;
+}
+
+.footer-widget-one {
+  padding: 130px 0;
+  background-color: #303030;
+  text-align: center;
+  position: relative;
+}
+
+.footer-widget-one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -5000px;
+  right: 100%;
+  background-color: #303030;
+}
+
+.footer-social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social ul li a {
+  color: #5d5d5d;
+}
+
+.footer-widget-two {
+  padding-top: 100px;
+}
+
+.footer-widget-heading h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #6b6b6b;
+}
+
+.footer-widget-address {
+  color: #6b6b6b;
+}
+
+.footer-widget-tweets {
+  color: #6b6b6b;
+}
+
+.footer-widget-tweets p {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.footer-widget-tweets p a {
+  color: #6b6b6b;
+}
+
+.footer-widget-tweets p::before {
+  content: "\f099 ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}
+
+.tweet-date {
+  display: block;
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+.footer-widget-form p {
+  color: #6b6b6b;
+}
+
+.subscribe input {
+  display: block;
+  width: 100%;
+  border: 1px solid #6b6b6b;
+  background-color: #262626;
+  padding: 8px 35px 8px 15px;
+  border-radius: 20px;
+  color: #6b6b6b;
+}
+
+.subscribe form {
+  position: relative;
+}
+
+.subscribe input:focus {
+  outline: 0;
+}
+
+.subscribe-icon {
+  color: #6b6b6b;
+  position: absolute;
+  top: 6px;
+  right: 18px;
+  font-size: 18px;
+}
+
+.submit {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.submit input {
+  width: 25px;
+  background: transparent;
+  font-size: 0;
+  border: 0;
+  height: 100%;
+}
+
+.copyright {
+  background-color: #1c1c1c;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 0;
+}
+
+.copyright p a {
+  color: #8bc34a;
+}
+
+/* ========= Top-arrow CSS ========== */
+
+.top-arrow {
+  width: 60px;
+  height: 50px;
+  background-color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 25px;
+  right: 130px;
+  cursor: pointer;
+}
+
+.top-arrow a {
+  color: #fff;
+  font-size: 25px;
+}
