@@ -46,14 +46,16 @@ $(document).ready(function () {
             scrollTop: 0
         }, 1000);
     });
-
-    $('navbar-nav a').click(function (e) {
+    $('.navbar-nav li').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+    $('.navbar-nav .nav-link').on('click',function (e) {
         e.preventDefault();
 
         var target = this.hash;
 
         $("html,body").animate({
-            scrollTop: $(target).offset().top - 80
+            scrollTop: $(target).offset().top-80
         }, 1000);
     });
 });
